@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tab setting</title>
+     <style>
+          body{
+               background-color: rgb(100, 194, 237);
+          }
+          .container{
+               transform: translateX(300px);
+               margin-top: 100px;
+               width: 45%;
+               height:250px;
+               border:1px solid black;
+               border-radius: 1px;
+               align-items: center;
+               background-color: #232225;
+               overflow: auto;
+          }
+          a{
+               padding-left: 30px;
+               color:rgb(105, 255, 223);
+               font-size: 2em;
+               cursor: pointer;
+            
+          } 
+          li{
+               color:#232225;
+          }
+          #show{
+               color:rgb(237, 100, 100);
+               font-size: 2em;
+               text-align: center;
+               padding-top:40px;
+               background-color: aliceblue;
+               overflow: auto;
+               font-weight: bold;
+               
+          }
+          a:hover {
+               background-color: #fff7f709;
+          }
+         
+        
+          
+     </style>
+</head>
+<body>
+     <div class="container">
+          <ul>
+               <li>
+                  <a id="demo1">Home</a>
+                  <a id="demo2">About</a>
+                  <a id="demo3">Contact</a>
+                  <a id="demo4">Services</a>
+               </li>
+          </ul>
+    
+     <hr></hr>
+     <div id="show">
+          
+     </div>
+     </div>
+     <script>
+          document.getElementById('demo1').addEventListener('click',()=>{
+               let demo='This is home page';
+               document.getElementById('show').innerText=demo;
+          });
+          document.getElementById('demo2').addEventListener('click',()=>{
+               let demo='This is About page';
+               document.getElementById('show').innerText=demo;
+          })
+          document.getElementById('demo3').addEventListener('click',()=>{
+               let demo='This is Contact page';
+               document.getElementById('show').innerText=demo;
+          })
+          document.getElementById('demo4').addEventListener('click',()=>{
+               let demo='This is Services page';
+               document.getElementById('show').innerText=demo;
+          })
+     </script>
+     
+</body>
+</html>
